@@ -7,6 +7,24 @@ Space Engineers 1 mod. Part of Chris's mod collection under
 
 Bundle repo for the Sturmgrenadier (SG) Core mod family — five related mods that ship together as the base SG server stack. Each mod lives in its own subfolder.
 
+## Where work lives (RULE — non-negotiable)
+
+**Every task on this mod is a ticket on its project board.** YOU (the agent) create the ticket BEFORE touching anything. No exceptions for "small" work.
+
+**Board:** [SG Core Mods board](https://github.com/orgs/gitpush-mod/projects/9)
+
+Concrete rules — same as TCS ticket-first:
+
+- **Starting work?** Open a ticket in this repo, add to the board, set Status = **In Progress**, then start.
+- **Have an idea for later?** Ticket in **Backlog**. Not in memory, not in a README, not in NOTES.md.
+- **Finished?** Close the ticket with a closing summary comment (what you did / problems + solutions / anything NOT done).
+- **Same-session micro-work?** Open + close in the same session — but the ticket exists.
+- **Older than 30 days in Done?** The weekly cron in this repo moves it to Archived. The closed ticket + CHANGELOG entry persist.
+
+Automation: closing a Done ticket auto-appends an entry to this repo's `CHANGELOG.md` (via the workflow in `gitpush-mod/.github`). Requires `MOD_PROJECT_TOKEN` org secret — already installed.
+
+**Do NOT** work on this mod without a ticket. If Chris asks for something small, create + immediately-close the ticket. It's still faster than the paper-trail debt of un-ticketed work.
+
 ## For agents
 
 - **Game:** Space Engineers 1
